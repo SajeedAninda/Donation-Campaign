@@ -1,9 +1,10 @@
 import React from 'react';
+import Swal from 'sweetalert2'
 
 let DonationDetailsDisplay = ({ details }) => {
     let { id, picture, title, description, price, txt_btn_bg } = details;
 
-    let btnColor={
+    let btnColor = {
         backgroundColor: `${txt_btn_bg}`
     }
 
@@ -14,16 +15,28 @@ let DonationDetailsDisplay = ({ details }) => {
         if (!donatedData) {
             donationArr.push(details);
             localStorage.setItem("donation", JSON.stringify(donationArr));
-            alert("Donation Added");
+            Swal.fire(
+                'You have Succesfully Donated!',
+                'Good Job!',
+                'success'
+            )
         }
         else {
             let donationExists = donatedData.find((detail) => detail.id === id);
             if (!donationExists) {
                 donationArr.push(...donatedData, details);
                 localStorage.setItem("donation", JSON.stringify(donationArr));
-                alert("Donation Added");
+                Swal.fire(
+                    'You have Succesfully Donated!',
+                    'Good Job!',
+                    'success'
+                )
             } else {
-                alert("Already added");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Donation Already Added...',
+                    text: 'Please Select other Donation Section!',
+                  })
             }
         }
     }
