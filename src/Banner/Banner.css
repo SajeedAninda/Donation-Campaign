@@ -1,6 +1,6 @@
 .bg{
     min-height: 100%;
-    background: url(../../Resources/Rectangle\ 4281.jpeg) no-repeat center center fixed;
+    background: url(../../Resources/Rectangle\ 4281.jpeg) no-repeat center center;
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(248, 242, 246, 0.897);
 }
