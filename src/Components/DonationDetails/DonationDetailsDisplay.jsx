@@ -1,7 +1,11 @@
 import React from 'react';
 
-const DonationDetailsDisplay = ({ details }) => {
-    let { id, picture, title, description, price } = details;
+let DonationDetailsDisplay = ({ details }) => {
+    let { id, picture, title, description, price, txt_btn_bg } = details;
+
+    let btnColor={
+        backgroundColor: `${txt_btn_bg}`
+    }
 
     let handleAddToDonation = () => {
         let donationArr = [];
@@ -31,7 +35,7 @@ const DonationDetailsDisplay = ({ details }) => {
                 <div className='w-full relative'>
                     <img className='w-full rounded-lg' src={picture} alt="" />
                     <div className='bg-black w-full py-10 px-6 bg-opacity-50 absolute bottom-0'>
-                        <button onClick={handleAddToDonation} className='px-4 py-3 bg-red-500 rounded-lg text-white'>Donate ${price}</button>
+                        <button style={btnColor} onClick={handleAddToDonation} className='px-4 py-3 bg-red-500 rounded-lg text-white'>Donate ${price}</button>
                     </div>
                 </div>
 

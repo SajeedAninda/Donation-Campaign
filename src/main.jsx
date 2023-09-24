@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Home from './Components/Home/Home.jsx'
 import Donation from './Components/Donation/Donation.jsx'
+import DonationDetails from './Components/DonationDetails/DonationDetails.jsx'
 import Statistics from './Components/Statistics/Statistics.jsx'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import DonationDetails from './DonationDetails/DonationDetails.jsx'
+
 
 
 const router = createBrowserRouter([
