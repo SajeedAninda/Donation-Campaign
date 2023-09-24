@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/vsRYkv4/Medical-Aid-Fund.png",
+        "title": "Medical Aid Fund",
+        "category": "Health",
+        "category_bg": "#0052ff33",
+        "card_bg": "#0052ff26",
+        "txt_btn_bg": "#0052FF",
+        "description": "Your generous donation to the Medical Aid Fund supports critical medical care and healthcare accessibility. We strive to make a significant impact on health and well-being by providing financial assistance to individuals facing medical emergencies and those who lack access to essential healthcare services. Your contribution helps cover medical bills, treatments, and medications, ensuring that no one has to compromise their health due to financial constraints. Join us in our mission to bring relief, hope, and healing to those in need."
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/RhSTJSp/Educational-Scholarships.jpg",
+        "title": "Educational Scholarships",
+        "category": "Education",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "txt_btn_bg": "#FF444A",
+        "description": "Invest in the future by providing educational scholarships to talented students. Your donation opens doors to knowledge and empowers young minds to succeed. We believe that education is the key to personal growth and societal progress. Your support enables us to offer scholarships, mentorship programs, and educational resources to deserving students who may face financial barriers to their dreams. Together, we're shaping a brighter tomorrow through education."
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/HDt6mFM/Warm-Clothing-Drive.jpg",
+        "title": "Warm Clothing Drive",
+        "category": "Clothing",
+        "category_bg": "#79c23f33",
+        "card_bg": "#79c23f26",
+        "txt_btn_bg": "#79C23F",
+        "description": "Help us keep communities warm by contributing to our clothing drive. Your donation provides winter clothing to those in need, ensuring they stay cozy during cold months. Many individuals and families face the harsh reality of cold winters without proper clothing. Your support brings warmth and comfort, allowing people to face winter with dignity and a sense of security. Together, we can make the world a warmer place."
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/S3TY0KH/Food-for-All.jpg",
+        "title": "Food for All",
+        "category": "Food",
+        "category_bg": "#f8714733",
+        "card_bg": "#f8714726",
+        "txt_btn_bg": "#F87147",
+        "description": "Support our mission to ensure that no one goes to bed hungry. Your donation provides nourishing meals to individuals and families facing food insecurity. Hunger should never be a daily reality for anyone. Your contribution helps us run food banks, meal programs, and community gardens. Together, we're making sure that everyone has access to nutritious food and the opportunity to thrive."
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/BTrz8Rh/clothe-the-needy.jpg",
+        "title": "Clothe the Needy",
+        "category": "Clothing",
+        "category_bg": "#79c23f33",
+        "card_bg": "#79c23f26",
+        "txt_btn_bg": "#79C23F",
+        "description": "Join our efforts to provide clothing to individuals and families facing economic hardships. Your donation directly impacts lives by clothing those in need. We believe that clothing is not just a basic necessity but also a symbol of dignity. Your contribution helps us distribute clothing to shelters, schools, and communities in need. Together, we're restoring hope and providing a fresh start to those who deserve it."
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/DkjFjyf/healthcare-for-all.jpg",
+        "title": "Healthcare for All",
+        "category": "Health",
+        "category_bg": "#0052ff33",
+        "card_bg": "#0052ff26",
+        "txt_btn_bg": "#0052FF",
+        "description": "Join us in our mission to ensure quality healthcare is accessible to all. Your contribution empowers us to reach underserved communities and provide essential care. We work towards reducing healthcare disparities and improving overall health outcomes. Your donation supports health awareness programs, preventive measures, medical facilities, and access to healthcare professionals. Together, we can create a healthier world where everyone has the opportunity to lead a fulfilling life free from health-related worries."
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/09sk3wx/Fighting-Hunger-Together.jpg",
+        "title": "Fighting Hunger Together",
+        "category": "Food",
+        "category_bg": "#f8714733",
+        "card_bg": "#f8714726",
+        "txt_btn_bg": "#F87147",
+        "description": "Join us in the fight against hunger by donating to our cause. Together, we can make a difference and ensure that everyone has access to nutritious food. Hunger is a global challenge, but it's one we can overcome when we stand together. Your contribution supports hunger relief programs, food distribution, and sustainable farming initiatives. Together, we're fighting hunger and building a world where no one has to go to bed hungry."
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/Vwt7bn4/Access-to-Learning.png",
+        "title": "Access to Learning",
+        "category": "Education",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "txt_btn_bg": "#FF444A",
+        "description": "Support our mission to ensure that every child has access to quality education. Your donation provides learning resources and opportunities to underserved communities. We work tirelessly to bridge the education gap by building schools, supplying books, and offering scholarships. Your contribution transforms lives by giving children the chance to learn, grow, and build a brighter future through education."
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/hWrwFrg/Empowering-Education.jpg",
+        "title": "Empowering Education",
+        "category": "Education",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "txt_btn_bg": "#FF444A",
+        "description": "Empower students with the tools they need to succeed academically. Your donation makes a lasting impact on education by providing essential resources and support. We believe that education should be a path to empowerment. Your support helps us establish learning centers, provide tutoring, and equip schools with modern educational technology. Together, we're shaping a world where education unlocks endless possibilities."
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/F5D68jp/Supporting-Health-Initiatives.jpg",
+        "title": "Supporting Health Initiatives",
+        "category": "Health",
+        "category_bg": "#0052ff33",
+        "card_bg": "#0052ff26",
+        "txt_btn_bg": "#0052FF",
+        "description": "Your donation supports a range of health initiatives aimed at improving lives and creating healthier communities. We focus on health education, disease prevention, medical research, and providing healthcare resources to underserved areas. By contributing, you become a partner in saving lives, promoting well-being, and creating sustainable health solutions. Your support helps us combat health challenges and fosters a culture of well-being for all."
+    },
+    {
+        "id": 11,
+        "picture": "https://i.ibb.co/ZfjFGc5/Nutrition-Support.jpg",
+        "title": "Nutrition Support",
+        "category": "Food",
+        "category_bg": "#f8714733",
+        "card_bg": "#f8714726",
+        "txt_btn_bg": "#F87147",
+        "description": "Help us provide essential nutrition support to those in need. Your donation positively impacts the health and well-being of individuals and families. Good nutrition is the foundation of a healthy life. Your support helps us distribute nutritious meals, educate communities on healthy eating, and address malnutrition. Together, we're ensuring that no one is left behind when it comes to good nutrition."
+    },
+    {
+        "id": 12,
+        "picture": "https://i.ibb.co/Q9jF7vK/Dress-with-Dignity.jpg",
+        "title": "Dress with Dignity",
+        "category": "Clothing",
+        "category_bg": "#79c23f33",
+        "card_bg": "#79c23f26",
+        "txt_btn_bg": "#79C23F",
+        "description": "Every individual deserves to dress with dignity. Your donation provides clothing and restores a sense of pride and self-worth to those who need it most. We believe in the transformative power of clothing to boost confidence and well-being. Your support helps us provide clothing tailored to the needs of individuals, from school uniforms to professional attire. Together, we're helping people dress with dignity and take confident steps forward."
+    }
+]
