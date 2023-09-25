@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Tooltip, Cell, Legend, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
   const [donatedItemPercentageInt, setDonatedItemPercentageInt] = useState(0);
@@ -10,7 +10,8 @@ const Statistics = () => {
       .then((res) => res.json())
       .then((data) => {
         const totalItemLength = data.length;
-        const donatedItemLength = JSON.parse(localStorage.getItem("donation")).length;
+        const donatedItem = JSON.parse(localStorage.getItem("donation"));
+        const donatedItemLength = donatedItem ? donatedItem.length : 0;
 
         const donatedItemPercentage = ((donatedItemLength * 100) / totalItemLength).toFixed(2);
         const totalItemPercentage = (100 - donatedItemPercentage).toFixed(2);
@@ -20,44 +21,41 @@ const Statistics = () => {
       });
   }, []);
 
-  const pieChartData = [
-    {
-      name: "Donated Items",
-      value: donatedItemPercentageInt,
-    },
-    {
-      name: "Total Items",
-      value: totalItemPercentageInt,
-    },
+  console.log(donatedItemPercentageInt, totalItemPercentageInt);
+
+  const data = [
+    { name: 'Your Donation', value: donatedItemPercentageInt },
+    { name: 'Total Donation', value: totalItemPercentageInt },
   ];
 
+  const COLORS = ['#00C49F', '#FF444A'];
+
   return (
-    <div>
-      <ResponsiveContainer width="500" height="300">
-        <PieChart data={pieChartData}>
-          <Pie
-            dataKey="value"
-            nameKey="name"
-            cx="50%"
-            cy="50%"
-            innerRadius="60%"
-            outerRadius="80%"
-            fill="#8884d8"
-            labelLine={true}
-            label={
-              ({ name, percent, cx, cy }) => ({
-                x: cx / 2 + 10,
-                y: cy / 2,
-                dy: 10,
-                textAnchor: "middle",
-                children: `${name} (${percent}%)`,
-              })
-            }
-          >
-            <Cell fill="#82ca9d" />
-          </Pie>
-          <Tooltip />
-        </PieChart>
+    <div className='flex my-5 md:mt-0 justify-center items-center h-[70vh]'>
+      <ResponsiveContainer>
+      <PieChart width={500} height={500}>
+        <Pie
+          data={data}
+          cx="50%" cy="50%" fill="#8884d8" dataKey="value" label={({
+            cx, cy, midAngle, innerRadius, outerRadius, value, index }) => {
+            const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+            const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
+            const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
+            return (
+              <text className='text-2xl font-bold' x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" >
+                {value}%
+              </text>
+            );
+          }}
+          labelLine={false}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index]} />
+          ))}
+        </Pie>
+        <Tooltip formatter={(value) => `${value}%`} />
+        <Legend/>
+      </PieChart>
       </ResponsiveContainer>
     </div>
   );
