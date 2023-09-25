@@ -31,32 +31,40 @@ const Statistics = () => {
   const COLORS = ['#00C49F', '#FF444A'];
 
   return (
-    <div className='flex my-5 md:mt-0 justify-center items-center h-[70vh]'>
+    <div className='flex flex-col my-5 md:mt-0 justify-center items-center h-[70vh]'>
       <ResponsiveContainer>
-      <PieChart width={500} height={500}>
-        <Pie
-          data={data}
-          cx="50%" cy="50%" fill="#8884d8" dataKey="value" label={({
-            cx, cy, midAngle, innerRadius, outerRadius, value, index }) => {
-            const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-            const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
-            const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
-            return (
-              <text className='text-2xl font-bold' x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" >
-                {value}%
-              </text>
-            );
-          }}
-          labelLine={false}
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index]} />
-          ))}
-        </Pie>
-        <Tooltip formatter={(value) => `${value}%`} />
-        <Legend/>
-      </PieChart>
+        <PieChart width={500} height={500}>
+          <Pie
+            data={data}
+            cx="50%" cy="50%" fill="#8884d8" dataKey="value" label={({
+              cx, cy, midAngle, innerRadius, outerRadius, value, index }) => {
+              const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+              const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
+              const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
+              return (
+                <text className='text-2xl font-bold' x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" >
+                  {value}%
+                </text>
+              );
+            }}
+            labelLine={false}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index]} />
+            ))}
+          </Pie>
+        </PieChart>
       </ResponsiveContainer>
+      <div className='flex flex-col md:flex-row gap-8'>
+        <div className='flex gap-2 items-center'>
+          <h3 className='text-[#0B0B0B]'>Your Donation</h3>
+          <div className='w-[80px] h-[12px] bg-[#00C49F] rounded-sm'></div>
+        </div>
+        <div className='flex gap-2 items-center'>
+          <h3 className='text-[#0B0B0B]'>Total Donation</h3>
+          <div className='w-[80px] h-[12px] bg-[#FF444A] rounded-sm'></div>
+        </div>
+      </div>
     </div>
   );
 };
