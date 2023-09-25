@@ -23,22 +23,11 @@ const DonatedCards = ({ cardData }) => {
 
 
     return (
-        // <Link to={`/details/${id}`}>
-        //     <div className={`rounded-lg`} style={bgStyle}>
-        //         <img className='h-[190px] w-full rounded-tl-lg rounded-tr-lg' src={picture} alt="" />
-        //         <div className='py-2 px-3 space-y-1'>
-        //             <div>
-        //                 <h3 style={combinedStyle} className={`inline-block text-sm rounded-lg py-1 px-2 mt-2`}>{category}</h3>
-        //             </div>
-        //             <h3 style={textColor} className={`text-base font-semibold`}>{title}</h3>
-        //         </div>
-        //     </div>
-        // </Link>
 
 
         <div className={`rounded-lg flex gap-2`} style={bgStyle}>
             <div>
-                <img className='h-[170px] w-[200px] rounded-tl-lg rounded-bl-lg' src={picture} alt="" />
+                <img className='h-[170px] object-cover w-[200px] rounded-tl-lg rounded-bl-lg' src={picture} alt="" />
             </div>
             <div className='py-2 px-3 space-y-1'>
                 <div>

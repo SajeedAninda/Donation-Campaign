@@ -5,6 +5,7 @@ import Home from './Components/Home/Home.jsx'
 import Donation from './Components/Donation/Donation.jsx'
 import DonationDetails from './Components/DonationDetails/DonationDetails.jsx'
 import Statistics from './Components/Statistics/Statistics.jsx'
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage> ,
     children: [
       {
         path: "/",

@@ -46,7 +46,7 @@ let DonationDetailsDisplay = ({ details }) => {
         <div>
             <div className='w-[90%] mx-auto space-y-6 mb-12'>
                 <div className='w-full relative'>
-                    <img className='w-full h-[70vh] object-cover rounded-lg' src={picture} alt="" />
+                    <img className='w-full h-[80vh] object-cover rounded-lg' src={picture} alt="" />
                     <div className='bg-black w-full py-2 md:py-6 lg:py-10 px-3 md:px-6 bg-opacity-50 absolute bottom-0'>
                         <button style={btnColor} onClick={handleAddToDonation} className='px-3 md:px-4 py-2 md:py-3 rounded-lg text-white'>Donate ${price}</button>
                     </div>
