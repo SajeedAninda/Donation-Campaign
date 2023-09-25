@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Cards = ({ cardData }) => {
-    const { id, picture, category, title, card_bg, category_bg, txt_btn_bg } = cardData;
+    let { id, picture, category, title, card_bg, category_bg, txt_btn_bg } = cardData;
 
     let bgStyle={
         backgroundColor: `${card_bg}`

@@ -1,16 +1,52 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import DonatedCards from './DonatedCards';
 
 const Donation = () => {
     let [donations, setDonations] = useState([]);
     let [noDonations, setNoDonations] = useState(false);
-    let donated = JSON.parse(localStorage.getItem("donation"));
+    let [showAll, setShowAll] = useState(false);
+    useEffect(() => {
+        let donated = JSON.parse(localStorage.getItem("donation"));
 
-    console.log(donated);
+        if (donated) {
+            setDonations(donated);
+        }
+        else {
+            setNoDonations("No Donations Found");
+        }
+    }, [])
+
 
 
     return (
         <div>
-            Donation
+            {noDonations ? (
+                <h1 className='text-4xl text-[#0B0B0B] font bold h-[70vh] flex justify-center items-center'>{noDonations}</h1>
+            ) : (
+                <div>
+                    <div className='grid grid-cols-2 gap-6 w-[90%] mx-auto mb-10'>
+                        {showAll ? (
+                            donations.map((cardData) => (
+                                <DonatedCards key={cardData.id} cardData={cardData} />
+                            ))
+                        ) : (
+                            donations.slice(0, 4).map((cardData) => (
+                                <DonatedCards key={cardData.id} cardData={cardData} />
+                            ))
+                        )}
+                    </div>
+                    <div className={`mt-5 flex justify-center ${showAll ? "hidden" : ""}`}>
+                        {donations.length > 4 && (
+                            <button
+                                className='px-4 py-3 bg-green-500 text-white font-bold rounded-lg'
+                                onClick={() => setShowAll(!showAll)}
+                            >
+                                See All
+                            </button>
+                        )}
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
