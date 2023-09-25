@@ -24,7 +24,7 @@ const Donation = () => {
                 <h1 className='text-4xl text-[#0B0B0B] font bold h-[70vh] flex justify-center items-center'>{noDonations}</h1>
             ) : (
                 <div>
-                    <div className='grid grid-cols-2 gap-6 w-[90%] mx-auto mb-10'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 w-[90%] mx-auto mb-10'>
                         {showAll ? (
                             donations.map((cardData) => (
                                 <DonatedCards key={cardData.id} cardData={cardData} />

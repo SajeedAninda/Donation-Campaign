@@ -15,8 +15,8 @@ const Home = () => {
         <div>
             <div className='flex h-[85vh] justify-center items-center bg'>
                 <div className='space-y-10'>
-                    <div className="text">
-                        <h1 className='font-bold text-[#0B0B0B] text-5xl '>I Grow By Helping People In Need</h1>
+                    <div className="text ">
+                        <h1 className='font-bold text-[#0B0B0B] text-center text-4xl md:text-5xl '>I Grow By Helping People In Need</h1>
                     </div>
                     <div className=''>
                         <form onSubmit={handleSubmit} className='w-full flex justify-center items-center'>
