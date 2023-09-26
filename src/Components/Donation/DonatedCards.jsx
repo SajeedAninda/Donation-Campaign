@@ -33,10 +33,10 @@ const DonatedCards = ({ cardData }) => {
                 <div>
                     <h3 style={combinedStyle} className={`inline-block text-sm rounded-lg py-1 px-2 mt-2`}>{category}</h3>
                 </div>
-                <h3 className={`text-xl font-semibold`}>{title}</h3>
+                <h3 className={`text-base md:text-xl font-semibold`}>{title}</h3>
                 <h4 className='font-semibold text-sm' style={textColor}>${price}.00</h4>
                 <Link to={`/details/${id}`}>
-                    <button style={btnColor} className='py-2 px-3 mt-3 text-white font-semibold rounded-lg'>View Details</button>
+                    <button style={btnColor} className='py-1 text-sm md:text-base md:py-2 px-3 mt-3 text-white font-semibold rounded-lg'>View Details</button>
                 </Link>
             </div>
         </div >
