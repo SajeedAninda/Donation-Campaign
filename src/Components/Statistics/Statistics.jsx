@@ -42,7 +42,7 @@ const Statistics = () => {
               const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
               const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
               return (
-                <text className='text-2xl font-bold' x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" >
+                <text className='text-2xl font-bold' x={x} y={y} fill="white" textAnchor={x > cx ? "middle" : "middle"} dominantBaseline="central" >
                   {value}%
                 </text>
               );
