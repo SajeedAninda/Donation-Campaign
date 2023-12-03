@@ -1,8 +1,17 @@
-# React + Vite
+## Donation-Campaign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## A web application created with Tailwind CSS and React JS, designed to facilitate charitable donations by offering a user friendly platform for donors to explore, choose, and make contributions to various donation efforts.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User-friendly interface for easy navigation.
+- Donation display with cards showing pictures, categories, titles, and prices.
+- Search functionality to filter donations by category.
+- Donation details page with information and description about each donation item.
+- Ability to add donations to a personal donation list.
+- Statistics page displaying the percentage of donated items.
+- Custom error page for handling 404 (not found) errors.
+- Responsive design for mobile and desktop devices.
+
+## Live-Link
+- To get a glimpse of the project, please visit: https://donation-campaign-sajeed.netlify.app/  
